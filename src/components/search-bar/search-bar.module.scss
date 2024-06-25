@@ -1,4 +1,19 @@
 .search-bar {
   &__wrapper {
   }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
