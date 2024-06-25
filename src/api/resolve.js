@@ -20,15 +20,20 @@ const useQuery = (endpoint, params) => {
         return;
       }
 
-      const result = await get.query(endpoint, query);
-
-      if (result) {
-        setData(result);
-      } else {
-        setError('Failed to fetch data');
-      }
-
-      setLoading(false);
+      await get
+        .query(endpoint, query)
+        .then((result) => {
+          setData(result);
+        })
+        .catch((error) => {
+          setError({
+            code: error?.response?.status,
+            message: error?.message,
+          });
+        })
+        .finally(() => {
+          setLoading(false);
+        });
     };
 
     fetchData();

@@ -1,8 +1,19 @@
 .search-bar {
-  &__wrapper {
+  width: 100%;
+  padding: 8px;
+
+  border: none;
+  border-radius: 8px;
+
+  &_wrapper {
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    gap: 12px;
   }
 
-  &__btn {
+  &_btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +21,10 @@
 
     border: none;
     border-radius: 8px;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     svg {
       width: 16px;

@@ -1,0 +1,40 @@
+.location {
+  display: flex;
+  justify-content: center;
+
+  &_basic {
+    &__row {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+  }
+
+  &_temperature {
+    margin: 0;
+    font-size: 72px;
+  }
+
+  &_name {
+    margin: 0;
+    font-size: 48px;
+  }
+
+  &_details {
+    margin: 0;
+  }
+
+  &_condition-icon {
+    width: 54px;
+    height: 54px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        fill: #ffffffde;
+      }
+    }
+  }
+}
