@@ -5,7 +5,17 @@ import PartlyCloudyDay from '@/static/icons/conditions/day/c-1003.svg?react';
 import PartlyCloudyNight from '@/static/icons/conditions/night/c-1003.svg?react';
 
 import Overcast from '@/static/icons/conditions/c-1009.svg?react';
-import Mist from '@/static/icons/conditions/c-1009.svg?react';
+import Mist from '@/static/icons/conditions/c-1030.svg?react';
+
+import LightRain from '@/static/icons/conditions/c-1183.svg?react';
+import ModerateRain from '@/static/icons/conditions/c-1189.svg?react';
+import HeavyRain from '@/static/icons/conditions/c-1195.svg?react';
+import FreezingRain from '@/static/icons/conditions/c-1198.svg?react';
+import LightSnow from '@/static/icons/conditions/c-1213.svg?react';
+import ModerateSnow from '@/static/icons/conditions/c-1219.svg?react';
+import HeavySnow from '@/static/icons/conditions/c-1225.svg?react';
+import Ice from '@/static/icons/conditions/c-1237.svg?react';
+import Blizzard from '@/static/icons/conditions/c-1273.svg?react';
 
 const ConditionIcon = ({ code, time }) => {
   const iconsByCode = {
@@ -30,176 +40,176 @@ const ConditionIcon = ({ code, time }) => {
       night: <Mist />,
     },
     1063: {
-      day: 'Patchy rain possible',
-      night: 'Patchy rain possible',
+      day: <LightRain />,
+      night: <LightRain />,
     },
     1066: {
-      day: 'Patchy snow possible',
-      night: 'Patchy snow possible',
+      day: <LightSnow />,
+      night: <LightSnow />,
     },
     1069: {
-      day: 'Patchy sleet possible',
-      night: 'Patchy sleet possible',
+      day: <LightRain />,
+      night: <LightRain />,
     },
     1072: {
-      day: 'Patchy freezing drizzle possible',
-      night: 'Patchy freezing drizzle possible',
+      day: <FreezingRain />,
+      night: <FreezingRain />,
     },
     1087: {
-      day: 'Thundery outbreaks possible',
-      night: 'Thundery outbreaks possible',
+      day: <Blizzard />,
+      night: <Blizzard />,
     },
     1114: {
-      day: 'Blowing snow',
-      night: 'Blowing snow',
+      day: <HeavySnow />,
+      night: <HeavySnow />,
     },
     1117: {
-      day: 'Blizzard',
-      night: 'Blizzard',
+      day: <Blizzard />,
+      night: <Blizzard />,
     },
     1135: {
-      day: 'Fog',
-      night: 'Fog',
+      day: <Mist />,
+      night: <Mist />,
     },
     1147: {
-      day: 'Freezing fog',
-      night: 'Freezing fog',
+      day: <HeavySnow />,
+      night: <HeavySnow />,
     },
     1150: {
-      day: 'Patchy light drizzle',
-      night: 'Patchy light drizzle',
+      day: <LightRain />,
+      night: <LightRain />,
     },
     1153: {
-      day: 'Light drizzle',
-      night: 'Light drizzle',
+      day: <LightRain />,
+      night: <LightRain />,
     },
     1168: {
-      day: 'Freezing drizzle',
-      night: 'Freezing drizzle',
+      day: <FreezingRain />,
+      night: <FreezingRain />,
     },
     1171: {
-      day: 'Heavy freezing drizzle',
-      night: 'Heavy freezing drizzle',
+      day: <FreezingRain />,
+      night: <FreezingRain />,
     },
     1180: {
-      day: 'Patchy light rain',
-      night: 'Patchy light rain',
+      day: <LightRain />,
+      night: <LightRain />,
     },
     1183: {
-      day: 'Light rain',
-      night: 'Light rain',
+      day: <LightRain />,
+      night: <LightRain />,
     },
     1186: {
-      day: 'Moderate rain at times',
-      night: 'Moderate rain at times',
+      day: <ModerateRain />,
+      night: <ModerateRain />,
     },
     1189: {
-      day: 'Moderate rain',
-      night: 'Moderate rain',
+      day: <ModerateRain />,
+      night: <ModerateRain />,
     },
     1192: {
-      day: 'Heavy rain at times',
-      night: 'Heavy rain at times',
+      day: <HeavyRain />,
+      night: <HeavyRain />,
     },
     1195: {
-      day: 'Heavy rain',
-      night: 'Heavy rain',
+      day: <HeavyRain />,
+      night: <HeavyRain />,
     },
     1198: {
-      day: 'Light freezing rain',
-      night: 'Light freezing rain',
+      day: <FreezingRain />,
+      night: <FreezingRain />,
     },
     1201: {
-      day: 'Moderate or heavy freezing rain',
-      night: 'Moderate or heavy freezing rain',
+      day: <FreezingRain />,
+      night: <FreezingRain />,
     },
     1204: {
-      day: 'Light sleet',
-      night: 'Light sleet',
+      day: <LightSnow />,
+      night: <LightSnow />,
     },
     1207: {
-      day: 'Moderate or heavy sleet',
-      night: 'Moderate or heavy sleet',
+      day: <LightSnow />,
+      night: <LightSnow />,
     },
     1210: {
-      day: 'Patchy light snow',
-      night: 'Patchy light snow',
+      day: <LightSnow />,
+      night: <LightSnow />,
     },
     1213: {
-      day: 'Light snow',
-      night: 'Light snow',
+      day: <LightSnow />,
+      night: <LightSnow />,
     },
     1216: {
-      day: 'Patchy moderate snow',
-      night: 'Patchy moderate snow',
+      day: <ModerateSnow />,
+      night: <ModerateSnow />,
     },
     1219: {
-      day: 'Moderate snow',
-      night: 'Moderate snow',
+      day: <ModerateSnow />,
+      night: <ModerateSnow />,
     },
     1222: {
-      day: 'Patchy heavy snow',
-      night: 'Patchy heavy snow',
+      day: <HeavySnow />,
+      night: <HeavySnow />,
     },
     1225: {
-      day: 'Heavy snow',
-      night: 'Heavy snow',
+      day: <HeavySnow />,
+      night: <HeavySnow />,
     },
     1237: {
-      day: 'Ice pellets',
-      night: 'Ice pellets',
+      day: <Ice />,
+      night: <Ice />,
     },
     1240: {
-      day: 'Light rain shower',
-      night: 'Light rain shower',
+      day: <ModerateRain />,
+      night: <ModerateRain />,
     },
     1243: {
-      day: 'Moderate or heavy rain shower',
-      night: 'Moderate or heavy rain shower',
+      day: <HeavyRain />,
+      night: <HeavyRain />,
     },
     1246: {
-      day: 'Torrential rain shower',
-      night: 'Torrential rain shower',
+      day: <HeavyRain />,
+      night: <HeavyRain />,
     },
     1249: {
-      day: 'Light sleet showers',
-      night: 'Light sleet showers',
+      day: <ModerateRain />,
+      night: <ModerateRain />,
     },
     1252: {
-      day: 'Moderate or heavy sleet showers',
-      night: 'Moderate or heavy sleet showers',
+      day: <HeavyRain />,
+      night: <HeavyRain />,
     },
     1255: {
-      day: 'Light snow showers',
-      night: 'Light snow showers',
+      day: <ModerateSnow />,
+      night: <ModerateSnow />,
     },
     1258: {
-      day: 'Moderate or heavy snow showers',
-      night: 'Moderate or heavy snow showers',
+      day: <ModerateSnow />,
+      night: <ModerateSnow />,
     },
     1261: {
-      day: 'Light showers of ice pellets',
-      night: 'Light showers of ice pellets',
+      day: <HeavySnow />,
+      night: <HeavySnow />,
     },
     1264: {
-      day: 'Moderate or heavy showers of ice pellets',
-      night: 'Moderate or heavy showers of ice pellets',
+      day: <HeavySnow />,
+      night: <HeavySnow />,
     },
     1273: {
-      day: 'Patchy light rain with thunder',
-      night: 'Patchy light rain with thunder',
+      day: <Blizzard />,
+      night: <Blizzard />,
     },
     1276: {
-      day: 'Moderate or heavy rain with thunder',
-      night: 'Moderate or heavy rain with thunder',
+      day: <Blizzard />,
+      night: <Blizzard />,
     },
     1279: {
-      day: 'Patchy light snow with thunder',
-      night: 'Patchy light snow with thunder',
+      day: <Blizzard />,
+      night: <Blizzard />,
     },
     1282: {
-      day: 'Moderate or heavy snow with thunder',
-      night: 'Moderate or heavy snow with thunder',
+      day: <Blizzard />,
+      night: <Blizzard />,
     },
   };
 

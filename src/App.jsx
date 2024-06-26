@@ -3,10 +3,12 @@ import { useEffect, useState } from 'react';
 import useQuery from '@/api/resolve';
 import { WeatherContextProvider } from '@/providers/WeatherContext';
 
+import Error from '@/components/error/Error';
+import Loader from '@/components/loader/Loader';
 import Header from '@/components/header/Header';
 import Location from '@/components/location/Location';
 
-import './App.css';
+import style from './app.module.scss';
 
 const App = () => {
   const [query, setQuery] = useState('');
@@ -37,16 +39,19 @@ const App = () => {
       value={{
         handleQueryChange,
         current: data,
+        currentLoading: loading,
       }}
     >
-      <div className="app">
+      <div>
         <Header />
 
-        {loading && <div>Loading...</div>}
+        <main className={style.main}>
+          {loading && <Loader />}
 
-        {error && <div>Error: {JSON.stringify(error)}</div>}
+          {error && <Error error={error} />}
 
-        {data && <Location />}
+          {!loading && !error && data && <Location />}
+        </main>
       </div>
     </WeatherContextProvider>
   );

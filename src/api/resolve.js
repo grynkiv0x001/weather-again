@@ -28,7 +28,7 @@ const useQuery = (endpoint, params) => {
         .catch((error) => {
           setError({
             code: error?.response?.status,
-            message: error?.message,
+            message: error?.response?.data?.error?.message,
           });
         })
         .finally(() => {
