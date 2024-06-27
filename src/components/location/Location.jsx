@@ -12,8 +12,16 @@ const NIGHT = 'night';
 
 const Location = () => {
   const {
-    current: { current, location },
+    current: { current, location, forecast },
   } = useWeatherContext();
+
+  console.log('Forecast: ', forecast);
+
+  // const currentForecast = forecast?.find((day) =>
+  //   dayjs(day?.data).isSame(dayjs()),
+  // );
+
+  // console.log('Current forecast: ', currentForecast);
 
   const { condition, temp_c, is_day } = current || {};
   const { name, localtime } = location || {};
